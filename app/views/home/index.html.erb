@@ -1,6 +1,12 @@
-<h1>マイページ(仮)</h1>
-<p>ここに色々と突っ込む予定</p>
+<h1>W3 プロフィール画面</h1>
 
 <div>
   <%= link_to "ログアウト", "/users/sign_out" %>
 </div>
+
+<div>
+  <%= link_to "プロフィール編集", "/users/edit" %>
+</div>
+
+<div>ユーザーID:<%= current_user.id %></div>
+<div>Name:<%= current_user.username %></div>
