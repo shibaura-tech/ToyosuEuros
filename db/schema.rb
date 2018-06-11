@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_11_160222) do
+ActiveRecord::Schema.define(version: 2018_06_11_172534) do
+
+  create_table "posts", force: :cascade do |t|
+    t.string "n"
+    t.text "post_message"
+    t.integer "topic_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["topic_id"], name: "index_posts_on_topic_id"
+  end
+
+  create_table "topics", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
