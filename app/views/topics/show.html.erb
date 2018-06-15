@@ -7,7 +7,7 @@
 <% end %>
 
 <h3>新規書き込み</h3>
-<%= form_for @newpost, :url => post_create_path do |f| %>
+<%= form_for @new_post, :url => post_create_path do |f| %>
   <p>本文</p>
   <p><%= f.text_area :post_message %></p>
   <%= f.hidden_field :topic_id %>

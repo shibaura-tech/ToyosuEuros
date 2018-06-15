@@ -1,12 +1,12 @@
 class TopicsController < ApplicationController
   def index
     @topics = Topic.all
-    @newTopic = Topic.new
+    @new_topic = Topic.new
   end
 
   def show
     @topic = Topic.find(params[:id])
-    @newpost = Post.new(topic_id: params[:id])
+    @new_post = Post.new(topic_id: params[:id])
     @posts = Post.where(topic_id: params[:id])
   end
 
