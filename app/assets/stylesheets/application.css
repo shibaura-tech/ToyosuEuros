@@ -14,27 +14,18 @@
  *= require_self
  */
 
-
-
-
 body{
-  background-image: url("C:\Users\owner\Documents\高度情報演習1B\HTML＆CSS\img_1.jpg");
-  background-color: black;
+  background-color: #ffffff;
 }
 
 .center{
 	text-align: center;
 }
 
-
 .header{
-	color:white;
+	color: rgb(113, 177, 105);
 	text-align: center;
 	font-weight: 600;
-}
-
-.enter{
-	color: black;
 }
 
 .circle_border{
@@ -46,11 +37,11 @@ body{
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background:black;
+  background: #ffffff;
   line-height: 500px;
   vertical-align: middle;
-	border: solid 5px white;
+	border: solid 5px rgb(113, 177, 105);
 	font-size: 80px;
-	color: white;
+	color: rgb(113, 177, 105);
 	text-decoration: none;
 }
