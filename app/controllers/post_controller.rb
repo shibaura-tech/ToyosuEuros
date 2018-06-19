@@ -1,6 +1,6 @@
 class PostController < ApplicationController
   def create
-    @post = Post.new(params[:post].permit(:topic_id, :post_message))
+    @post = Post.new(params[:post].permit(:topic_id, :post_message, :post_user_name))
     @post.save
     redirect_to topics_show_path(params[:post]['topic_id'])
   end
