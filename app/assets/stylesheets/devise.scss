@@ -1,9 +1,13 @@
 body {
+  height: 100%;
+  width: 100%;
   background-color: #ffffff;
 }
 
 .all-content-wrap {
-	background: image-url('');
+  height: 100%;
+  background: image-url('opening_image.jpg');
+  background-size: cover;
 }
 
 .main-content-wrap {
@@ -21,7 +25,6 @@ body {
   width: 550px;
   height: 550px;
   border-radius: 50%;
-  background: #ffffff;
   line-height: 500px;
   vertical-align: middle;
 	border: solid 5px rgb(113, 177, 105);
