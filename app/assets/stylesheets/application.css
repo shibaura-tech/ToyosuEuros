@@ -18,7 +18,7 @@ body{
   background-color: #ffffff;
 }
 
-.center{
+.main-content-wrap{
 	text-align: center;
 }
 
@@ -28,7 +28,7 @@ body{
 	font-weight: 600;
 }
 
-.sss{
+.main-content{
 	display: inline-block;
   width: 550px;
   height: 550px;
