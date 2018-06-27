@@ -1,0 +1,31 @@
+body {
+  background-color: #ffffff;
+}
+
+.all-content-wrap {
+	background: image-url('');
+}
+
+.main-content-wrap {
+	text-align: center;
+}
+
+.header {
+	color: rgb(113, 177, 105);
+	text-align: center;
+	font-weight: 600;
+}
+
+.main-content {
+	display: inline-block;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: #ffffff;
+  line-height: 500px;
+  vertical-align: middle;
+	border: solid 5px rgb(113, 177, 105);
+	font-size: 80px;
+	color: rgb(113, 177, 105);
+	text-decoration: none;
+}
