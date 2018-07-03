@@ -14,6 +14,8 @@
   <div style="display: inline-block">本文</div>  
   <div style="display: inline-block"><%= f.text_area :post_message %></div>
   <%= f.hidden_field :topic_id %>
+  <div style="display: inline-block">ユーザーid</div>  
+  <div style="display: inline-block"><%= f.text_area :user_id %></div>
   <%= f.submit %>
 <% end %>
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_11_172534) do
+ActiveRecord::Schema.define(version: 2018_07_03_051414) do
 
   create_table "posts", force: :cascade do |t|
     t.text "post_message"
@@ -18,7 +18,9 @@ ActiveRecord::Schema.define(version: 2018_06_11_172534) do
     t.integer "topic_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
     t.index ["topic_id"], name: "index_posts_on_topic_id"
+    t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "topics", force: :cascade do |t|
