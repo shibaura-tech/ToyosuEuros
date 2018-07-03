@@ -1,14 +1,55 @@
-<h1>W3 プロフィール画面</h1>
+<head>
+  <meta charset="utf-8">
+  <title>プロフィール</title>
+  <link rel="stylesheet" href="profuru.css">
+</head>
 
-<div>
-  <%= link_to "ログアウト", "/users/sign_out" %>
-</div>
+<body>
+  <div class="header">
+    <ul class="lefthead">
+      <li><%= link_to "プロフィール編集", "/users/edit" %></li>
+      <a href=""><li>ユーザ検索</li></a>
+    </ul>
 
-<div>
-  <%= link_to "プロフィール編集", "/users/edit" %>
-</div>
+    <ul class="righthead">
+      <li><%= link_to "Log Out", "/users/sign_out" %></li>
+      <li><%= link_to  "MyName", "" %></li>
+      <li><%= link_to  "チャット", "" %></li>
+      <li><%= link_to '掲示板へ', topics_index_url %></li> 
+    </ul>
+  </div>
 
-<div>ユーザーID:<%= current_user.id %></div>
-<div>Name:<%= current_user.username %></div>
+  <div class="youser">
+    <img src="kuroko.jpg">
+    <div class="myprof">
+      <p class="mypro1">Name :<%= current_user.username %>　　ユーザID :<%= current_user.id %></p>
+      <p class="mypro2"><a href="">aaaaa</a> 他aaaaaルームから招待を受けています。</p>
+    </div>
+    <ul class="mypro3">
+      <a href=""><li class="mypro3-1">アカウント削除</li></a>
+      <a href=""><li>プロフィールの編集</li></a>
+    </ul>
+  </div>
 
-<%= link_to '掲示板へ', topics_index_url %> 
+  <div class="room">
+    <p>参加中のルーム</p>
+      <div class="room1">
+      </div>
+    <p>招待中のルーム</p>
+      <div class="room2">
+      </div>
+  </div>
+
+  <div class="writelist">
+    <p>自分の最近の書き込みのリスト</p>
+      <div class="writelist1">
+      </div>
+  </div>
+
+  <div class="ranking">
+    <p>掲示板のランキング</p>
+      <div class="ranking1">
+      </div>
+  </div>
+
+</body>
