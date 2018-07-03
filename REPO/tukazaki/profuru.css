@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: "Avenir Next";
+}
+li {
+	list-style: none;
+}
+.header {
+ background-color:#B09FA0;
+	color:#FFFFFF;
+	height: 40px;
+}
+.lefthead li {
+	float: left;
+	padding: 13px 10px 13px 0px;
+}
+.righthead li {
+	float: right;
+	padding: 13px 10px;
+}
+
+.youser {
+	padding-top: 30px;
+}
+
+.youser img {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 30px;
+	margin-left: 80px;
+	border: 1px solid black;
+}
+
+.mypro1 {
+	font-size: 25px;
+}
+
+.mypro3 {
+	padding-bottom: 30px;
+	padding-right: 50px;
+	border-bottom: 1px solid #333;
+}
+
+.mypro3 li {
+	padding: 8px;
+	float: right;
+}
+
+.mypro3-1{
+	color: red;
+}
+
+.room {
+	float: left;
+	border: 1px solid blue;
+	padding: 5px 50px 500px 50px;
+	margin: 0px 10px 0px 100px;
+}
+
+.writelist {
+	float: left;
+	border: 1px solid blue;
+	padding: 5px 100px 600px 100px;
+	margin: 0px 10px 0px 10px;
+}
+
+.ranking {
+	float: left;
+	border: 1px solid blue;
+	padding: 5px 50px 600px 50px;
+	margin: 0px 10px 0px 10px;
+}
