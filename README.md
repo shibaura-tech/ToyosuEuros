@@ -9,3 +9,4 @@ Railsバージョン : 5.2.0
 - [Doppon](https://github.com/Doppon)
 - [HirokiTabuchi](https://github.com/HirokiTabuchi)
 - [chironnup](https://github.com/chironnup)
+- [tsukayuki](https://github.com/tsukayuki)
