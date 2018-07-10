@@ -23,3 +23,20 @@ body {
   width: 100%;
 	margin: 0px;
 }
+
+a,a:link{
+	text-decoration: none;
+	color:#71B169;
+}
+a:visited{
+	text-decoration: none;
+	color:#71B169;
+}
+a:hover{
+	text-decoration: none;
+	color:#71B169;
+}
+a:active{
+	text-decoration: none;
+	color:#71B169;
+}
