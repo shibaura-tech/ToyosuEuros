@@ -5,20 +5,22 @@
 </head>
 
 <body>
-  <div class="header">
-    <ul class="lefthead">
-      <li><%= link_to "プロフィール編集", "/users/edit" %></li>
-      <a href=""><li>ユーザ検索</li></a>
-    </ul>
+  <div id="page-header">
+    <div id="page-header-inner">
+      <ul id="prof-navigation">
+        <li><%= link_to "MyPage", "/users" %></li>
+        <li><%= link_to "プロフィール編集", "/users/edit" %></li>
+        <li><%= link_to "ユーザ検索","" %>/li>
+      </ul>
 
-    <ul class="righthead">
-      <li><%= link_to "Log Out", "/users/sign_out" %></li>
-      <li><%= link_to  "MyName", "" %></li>
-      <li><%= link_to  "チャット", "" %></li>
-      <li><%= link_to '掲示板へ', topics_index_url %></li> 
-    </ul>
+      <ul id="general-navigation">
+        <li><%= link_to "Log Out", "/users/sign_out" %></li>
+        <li><%= link_to  "MyPage", "" %></li>
+        <li><%= link_to  "チャット", "" %></li>
+        <li><%= link_to '掲示板', topics_index_url %></li>
+      </ul>
+    </div>
   </div>
-
   <div class="youser">
     <img src="kuroko.jpg">
     <div class="myprof">
