@@ -1,0 +1,47 @@
+@font-face{
+    font-family: 'myfont';
+    src:url('/font/font12-Regular.ttf');
+}
+body{
+    font-family: myfont;
+    background-color: white;
+}
+.center{
+    white-space: nowrap;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 30px;
+}
+
+.title{
+    	text-align: center
+
+}
+
+
+.link1 ul{
+    padding-top: 40px;
+    font-size:25px;
+}
+
+.link1 ul li{
+    display: inline;
+    text-align: center;
+    padding: 70px;
+}
+
+
+
+.link2 ul{
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.link2 ul li{
+    display: inline;
+    text-align: center;
+    padding: 70px;
+}
+    	
+
+       
