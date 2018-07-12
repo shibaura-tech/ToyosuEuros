@@ -1,0 +1,41 @@
+body{
+background-image: url("C:\Users\owner\Documents\高度情報演習1B\HTML＆CSS\img_1.jpg");
+background-color: black;
+}
+
+.center{
+	text-align: center;
+}
+
+
+.header{
+	color:white;
+	text-align: center;
+	font-weight: 600;
+}
+
+.enter{
+	color: black;
+}
+
+.circle_border{
+	border-radius: 20px;
+}
+
+.sss{
+	display: inline-block;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background:black;
+  line-height: 500px;
+  vertical-align: middle;
+	border: solid 5px white;
+	font-size: 80px;
+	color: white;
+	text-decoration: none;
+}
+
+.a{
+font-color: white;
+}
