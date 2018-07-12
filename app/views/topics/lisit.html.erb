@@ -1,0 +1,24 @@
+<div id="page-header">
+  <div id="page-header-inner">
+    <ul id="topic-navigation">
+      <li>スレッドエントランス</li>
+      <li><%= link_to "スレッド作成","topics/create" %></li>
+      <li><%= link_to "スレッドリスト","topics/list" %></li>
+    </ul>
+    <ul id="general-navigation">
+<!-- float:rightで逆順になるからその場しのぎだけどこの形に-->
+      <li><%= link_to "ログアウト","/users/sign_out" %></li>
+      <li><%= link_to "MyPage","/" %></li>
+      <li>チャット</li>
+      <li><%= link_to "掲示板","topics/index" %></li>
+    </ul>
+  </div>
+</div>
+
+<h2 class = topic_title>スレッド一覧</h2>
+<% @topics.each do |topic| %>
+  <div>
+    <%= link_to topic.title, topics_show_path(topic.id) %>
+    <%= link_to '[削除]', topic_delete_path(topic.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %>
+  </div>
+<% end %>

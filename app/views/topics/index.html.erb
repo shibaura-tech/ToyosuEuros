@@ -1,15 +1,35 @@
-<h2 class = topic_title>トピック一覧</h2>
-<% @topics.each do |topic| %>
-  <div>
-    <%= link_to topic.title, topics_show_path(topic.id) %>
-    <%= link_to '[削除]', topic_delete_path(topic.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %> 
+
+<div id="page-header">
+  <div id="page-header-inner">
+    <ul id="topic-navigation">
+      <li>スレッドエントランス</li>
+      <li><%= link_to "スレッド作成","topics/create" %></li>
+      <li><%= link_to "スレッドリスト","topics/list" %></li>
+    </ul>
+    <ul id="general-navigation">
+<!-- float:rightで逆順になるからその場しのぎだけどこの形に-->
+      <li>ログアウト</li>
+      <li><%= link_to "MyPage","/" %></li>
+      <li>チャット</li>
+      <li><%= link_to "掲示板",topics_index_url %></li>
+    </ul>
   </div>
-<% end %>
-
-<h2>トピック新規登録</h2>
-<%= form_for @new_topic, :url => {:action => 'create'} do |f| %>
-  <%= f.text_field :title %>
-  <%= f.submit(['新しいトピックを追加']) %>
-<% end %>
-
-<%= link_to 'マイページへ', '/' %>
+</div>
+<div id="content-container">
+  <div class="center">
+    <h1>掲示板エントランス</h1>
+    <div class="link1">
+        <ul>
+            <li><a href="">掲示板とは</a></li>
+            <li><a href="">スレッドとは</a></li>
+            <li><a href="">掲示板の使い方</a></li>
+        </ul>
+    </div>
+    <div class="link2">
+        <ul>
+            <li><%= link_to "掲示板を作成する","topics/create" %></li>
+            <li><%= link_to "掲示板を見つける","list" %></li>
+        </ul>
+    </div>
+  </div>
+</div>
