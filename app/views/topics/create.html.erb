@@ -6,7 +6,7 @@
       <li><%= link_to 'スレッドリスト','topics/list' %></li>
     </ul>
     <ul id="general-navigation">
-<!-- float:rightで逆順になるからその場しのぎだけどこの形に-->
+      <!-- float:rightで逆順になるからその場しのぎだけどこの形に-->
       <li>ログアウト</li>
       <li><%= link_to 'MyPage','/' %></li>
       <li>チャット</li>
@@ -21,7 +21,7 @@
       <p>スレッドタイトルを入力してください</p>
     </div>
     <%= f.text_field :title %>
-<!--
+    <!--
     <div class="content2">
       <p>スレッドの内容を入力してください</p>
     </div>
@@ -32,8 +32,7 @@
     <div class="content3">
       <p> <input type="checkbox">名無しで発言する</p>
     </div>
--->
-
+    -->
     <%= f.submit(['新しいスレッドを追加']) %>
   </div>
 <% end %>

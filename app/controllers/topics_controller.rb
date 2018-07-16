@@ -4,7 +4,6 @@ class TopicsController < ApplicationController
 
   def list
     @topics = Topic.all
-    @new_topic = Topic.new
   end
 
   def show
@@ -15,9 +14,12 @@ class TopicsController < ApplicationController
   end
 
   def create
-    @topic = Topic.new(params[:topic].permit(:title))
-    @topic.save
-    redirect_to topics_index_path
+    @new_topic = Topic.new    
+    if request.post?
+      @topic = Topic.new(params[:topic].permit(:title))
+      @topic.save
+      redirect_to topics_index_path
+    end
   end
 
   def delete
