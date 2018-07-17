@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'topics/index'
 
-  get 'topics/list' =>'topics#list'
+  get 'topics/list' => 'topics#list'
 
   get 'topics/show/:id' => 'topics#show', as: :topics_show
   get 'topics/create' => 'topics#create'
