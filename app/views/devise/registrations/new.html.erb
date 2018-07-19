@@ -3,6 +3,7 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
+<div class="parallel">
   <div class="field">
     <%= f.label :username %><br />
     <%= f.text_field :username, autofocus: true %>
@@ -33,3 +34,8 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
+
+<div class="main-content-wrap-r">
+  <span class="main-content-r">ToyosuEuros</span>
+</div>

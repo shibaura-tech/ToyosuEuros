@@ -1,22 +1,31 @@
 .all-content-wrap {
-  //height: 100%;
-  //background: image-url('toyosu_images.jpg');
-  background-color: white;
-  //background-size: cover;
+  height: 100%;
+  background: image-url('toyosu_images.jpg');
+  //background-color: white;
+  background-size: cover;
 }
 
 .main-content-wrap {
 	text-align: center;
+  padding:12px;
+}
+
+.main-content-wrap-r {
+	text-align: center;
 }
 
 .header {
-	color: #71B169;
+	color: #0B610B;
 	text-align: center;
 	font-weight: 600;
 }
 
-.field{
-  color:green;
+.field-r{
+  color:#0B610B;
+}
+
+.parallel{
+  float:left;
 }
 
 .mail{
@@ -40,19 +49,35 @@
 	color: rgb(113, 177, 105);
 	text-decoration: none;
 }
+
+.main-content-r {
+	display: inline-block;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  line-height: 500px;
+  vertical-align: middle;
+	border: solid 10px rgb(113, 177, 105);
+	font-size: 85px;
+	color: rgb(113, 177, 105);
+	text-decoration: none;
+}
+.color-r{
+  color:#0B610B;
+}
 a,a:link{
 	text-decoration: none;
-	color:#71B169;
+	color:#0B610B;
 }
 a:visited{
 	text-decoration: none;
-	color:#71B169;
+	color:#0B610B;
 }
 a:hover{
 	text-decoration: none;
-	color:#71B169;
+	color:#0B610B;
 }
 a:active{
 	text-decoration: none;
-	color:#71B169;
+	color:#0B610B;
 }

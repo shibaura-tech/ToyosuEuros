@@ -14,7 +14,7 @@ class TopicsController < ApplicationController
   end
 
   def create
-    @new_topic = Topic.new    
+    @new_topic = Topic.new
     if request.post?
       @topic = Topic.new(params[:topic].permit(:title))
       @topic.save
