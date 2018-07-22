@@ -8,7 +8,7 @@
     </ul>
     <ul id="general-navigation">
       <!-- float:rightで逆順になるからその場しのぎだけどこの形に-->
-      <li>ログアウト</li>
+      <li><%= link_to "ログアウト","/users/sign_out" %></li>
       <li><%= link_to "MyPage","/" %></li>
       <li><%= link_to "チャット","/" %></li>
       <li><%= link_to "掲示板",topics_index_url %></li>
