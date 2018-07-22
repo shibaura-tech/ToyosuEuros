@@ -11,6 +11,7 @@ class TopicsController < ApplicationController
     @new_post = Post.new(topic_id: params[:id])
     @posts = Post.where(topic_id: params[:id])
     @user_id = current_user.id
+    #Todo グローバル変数でない方法を考える
     $topic_id = params[:id]
   end
 
