@@ -21,7 +21,7 @@ class TopicsController < ApplicationController
     if request.post?
       @topic = Topic.new(params[:topic].permit(:title))
       @topic.save
-      redirect_to topics_index_path
+      redirect_to topics_list_path
     end
   end
 
