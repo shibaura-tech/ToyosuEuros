@@ -2,7 +2,7 @@
 <div id="page-header">
   <div id="page-header-inner">
     <ul id="topic-navigation">
-      <li>スレッドエントランス</li>
+      <li><%= link_to "スレッドエントランス","/topics/index" %></li>
       <li><%= link_to "スレッド作成","/topics/create" %></li>
       <li><%= link_to "スレッドリスト","/topics/list" %></li>
     </ul>
@@ -20,15 +20,15 @@
     <h1>掲示板エントランス</h1>
     <div class="link1">
         <ul>
-            <li><a href="/">掲示板とは</a></li>
-            <li><a href="/">スレッドとは</a></li>
-            <li><a href="/">掲示板の使い方</a></li>
+            <li><a href="">掲示板とは</a></li>
+            <li><a href="">スレッドとは</a></li>
+            <li><a href="">掲示板の使い方</a></li>
         </ul>
     </div>
     <div class="link2">
         <ul>
             <li><%= link_to "掲示板を作成する","/topics/create" %></li>
-            <li><%= link_to "掲示板を見つける","list" %></li>
+            <li><%= link_to "掲示板を見つける","/topics/list" %></li>
         </ul>
     </div>
   </div>

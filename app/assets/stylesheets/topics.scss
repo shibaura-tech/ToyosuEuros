@@ -132,6 +132,50 @@ body{
 #page-header #page-header-inner{
   width:80%;
 }
+#content-container{
+
+}
+#side-list{
+  width:20%;
+	height: 1024px;
+	padding-top: 40px;
+	padding-left: 10px;
+	margin-right: 10px;
+  float: left;
+  display: inline-block;
+	border-right: solid 1px #A8D08C;
+
+}
+#content-wrapper{
+	width: 80%;
+	text-align: left;
+}
+#main-content{
+	width:70%;
+	margin-top: 50px;
+	float: right;
+}
+#content-header{
+	border-bottom: solid 1px #A8D08C;
+}
+.post-container{
+	border:1px solid #A8D08C;    /* 枠線の色 */
+	background-color: #fff;   	 /* 背景色 */
+	border-radius: 20px;         /* CSS3 */
+	-webkit-border-radius: 20px; /* Safari,Chrome */
+
+	padding: 5px;
+	margin-bottom: 3px;
+}
+.post-container p{
+	margin:0px;
+}
+.post-container .post-message{
+	word-break: break-all;
+}
+#new-post-container textarea{
+	font-size: 15px;
+}
 ul{
   list-style-type: none;
 }
@@ -145,6 +189,7 @@ li{
 }
 #page-header a:visited{
   text-decoration: none;
+	color:#A8D08C;
 }
 #topic-navigation li{
   float:left;

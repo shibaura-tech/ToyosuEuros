@@ -1,27 +1,63 @@
-<h2><%= @topic.title %></h2>
+<div id="page-header">
+  <div id="page-header-inner">
+    <ul id="topic-navigation">
+      <li><%= link_to "スレッドエントランス","/topics/index" %></li>
+      <li><%= link_to "スレッド作成","/topics/create" %></li>
+      <li><%= link_to "スレッドリスト","/topics/list" %></li>
+    </ul>
+    <ul id="general-navigation">
+      <!-- float:rightで逆順になるからその場しのぎだけどこの形に-->
+      <li><%= link_to "ログアウト","/users/sign_out" %></li>
+      <li><%= link_to "MyPage","/" %></li>
+      <li><%= link_to "チャット","/" %></li>
+      <li><%= link_to "掲示板","/topics/index" %></li>
+    </ul>
+  </div>
+</div>
 
-<% @posts.each do |post| %>
-  <p>
-    <span>ユーザー名：</span>
-    <%= post.post_user_name %>
+<div id="page-container">
+  <div id="side-list">
+    <% @topics.each do|topic| %>
+      <p><%= link_to topic.title,topics_show_path(topic.id)%></p>
+    <% end%>
+  </div>
 
-    <br>
+	<div id="content-wrapper">
+  <div id="main-content">
+		<div id="content-header">
+			<h2><%= @topic.title %></h2>
+		</div>
 
-    <span>内容：</span>
-    <%= post.post_message %>
-    <%= link_to '[削除]', post_delete_path(post.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %>
-  </p>
-<% end %>
+		<div id="content-container">
+				<% @posts.each_with_index do |post,idx| %>
+				<div class="post-container">
+					<p>
+						■<%= idx +1%>
+				    <span>ユーザー名：</span>
+				    <%= post.post_user_name %>.
+						<span class="post_time"><%= post.created_at %></span>.
+						<%= link_to '[削除]', post_delete_path(post.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %>
+					</p>
+					<br>
+					<p>
+				    <span class="post-message"><%= post.post_message %></span>
+				  </p>
+				</div>
+				<% end %>
+		</div>
 
-<h3>新規書き込み</h3>
-<%= form_for @new_post, :url => post_create_path do |f| %>
-  <div style="display: inline-block">名前</div>
-  <div style="display: inline-block"><%= f.text_area :post_user_name %></div>
-  <div style="display: inline-block">本文</div>
-  <div style="display: inline-block"><%= f.text_area :post_message %></div>
-  <%= f.hidden_field :topic_id %>
-  <%= f.hidden_field :user_id, :value => @user_id %>
-  <%= f.submit %>
-<% end %>
-
+		<div id="new-post-container">
+			<h3>新規書き込み</h3>
+			<%= form_for @new_post, :url => post_create_path do |f| %>
+			  <div style="display: inline-block">名前</div>
+			  <div style="display: inline-block"><%= f.text_area :post_user_name, :size => "20x1" %></div><br>
+			  <div style="display: inline-block">本文</div>
+			  <div style="display: inline-block"><%= f.text_area :post_message, :size => "40x5" %></div>
+			  <%= f.hidden_field :topic_id %>
+			  <%= f.hidden_field :user_id, :value => @user_id %>
+			  <%= f.submit %>
+			<% end %>
+		</div>
 <%= link_to 'スレッド一覧へ', topics_index_url %>
+</div>
+</div>
