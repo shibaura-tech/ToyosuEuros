@@ -8,13 +8,14 @@
     <ul id="general-navigation">
       <!-- float:rightで逆順になるからその場しのぎだけどこの形に-->
       <li><%= link_to "ログアウト","/users/sign_out" %></li>
-      <li><%= link_to 'MyPage','/' %></li>
-      <li><%= link_to 'チャット','/' %></li>
-      <li><%= link_to '掲示板','topics/index' %></li>
+      <li><%= link_to 'MyPage','' %></li>
+      <li><%= link_to 'チャット','' %></li>
+      <li><%= link_to '掲示板','/topics/index' %></li>
     </ul>
   </div>
 </div>
 
+<div style="margin-top:50px;">
 <%= form_for @new_topic, :url => {:action => 'create'} do |f| %>
   <div class="">
     <div class="content1">
@@ -24,3 +25,4 @@
     <%= f.submit(['新しいスレッドを追加']) %>
   </div>
 <% end %>
+</div>
